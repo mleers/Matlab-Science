@@ -1,0 +1,13 @@
+clear;
+clc;
+w=2000; R=1.987; T1=400; T2=600;
+Xb=linspace(0,1,200);
+Gmideal1=(R*T1)*(((1-Xb).*log(1-Xb))+(Xb.*log(Xb)));
+Gmideal2=(R*T2)*(((1-Xb).*log(1-Xb))+(Xb.*log(Xb)));
+Gmexcess= w*((1-Xb).*Xb);
+Gmmix1=Gmideal1+Gmexcess;
+Gmmix2=Gmideal2+Gmexcess;
+plot(Xb, Gmmix1,'r',Xb,Gmmix2,'b');
+xlabel('Xb');ylabel('Gibbs E of mixing, molar [cal]');
+title('Gibbs E of Mixing for Binary Soln @ 400K and 600K (Molar)');
+legend('400K','600K');
