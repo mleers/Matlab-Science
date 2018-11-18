@@ -1,8 +1,9 @@
 # Matlab-Science
 Contains matlab files related to plotting/simulating science related topics.
+thermo_gas_eqns.m and thermo_gas_solver.m are run together
 
-### To run molecular dynamics script (moldyn.m): 
-Add vverlet.m, iniconfig.m, forces.m, energies, tape and pressure text files and movie.xyz to path.  Data is written to text files for further analysis.
+### To run Moldyn molecular dynamics script (moldyn.m): 
+Add contents of DataFiles and Scripts to same directory.  Run moldyn.m; data is written to text files for further analysis.
 
-### To run mock video script (main_program.m):
-Add img_loader.m, img_loader2.m, placer.m, rotater.m, seagull_noise.m, seagull.jpeg, pirate_boat.jpeg and Seagulls.wav files to path.  Image is moved in a sine function to imitate flight by iterating over loops.
+### To run Video Project video script (main_program.m):
+Add contents of Media and Scripts to same directory.  Run main_program.m.  Image is moved in a sine function to imitate flight by iterating over loops with a static background image.
