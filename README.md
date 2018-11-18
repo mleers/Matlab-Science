@@ -1,5 +1,5 @@
 # Matlab-Science
-Contains matlab files related to plotting/simulating science related topics.
+Contains matlab files related to plotting/simulating science related topics.  
 thermo_gas_eqns.m and thermo_gas_solver.m are run together
 
 ### To run Moldyn molecular dynamics script (moldyn.m): 
